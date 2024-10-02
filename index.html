@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Avanzada con Formulario</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            
+        }
+        th, td {
+            border: 1px solid #1d0cb4;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Formulario de Datos</h2>
+<form>
+    <table>
+        <tr>
+            <th>Pregunta</th>
+            <th>Respuesta</th>
+        </tr>
+        <tr>
+            <td>Nombre</td>
+            <td><input type="text" name="nombre" required></td>
+        </tr>
+        <tr>
+            <td>Apellido</td>
+            <td><input type="text" name="apellido" required></td>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td><input type="text" name="edad" required></td>
+        </tr>
+        <tr>
+            <td>País</td>
+            <td><input type="text" name="pais" required></td>
+        </tr>
+        <tr>
+            <td>Correo electrónico</td>
+            <td><input type="email" name="correo" required></td>
+        </tr>
+        <tr>
+            <td>¿Qué red social utilizas?</td>
+            <td>
+                <select name="red_social">
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="TikTok">TikTok</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>¿Prefieres PlayStation o Xbox?</td>
+            <td>
+                <select name="consola">
+                    <option value="PlayStation">PlayStation</option>
+                    <option value="Xbox">Xbox</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>¿Con qué frecuencia juegas a videojuegos?</td>
+            <td>
+                <input type="text" name="frecuencia" required>
+            </td>
+        </tr>
+        <tr>
+            <td>¿Jugador de Low ping o High ping?</td>
+            <td>
+                <input type="checkbox" name="ping" value="Low ping"> Low ping<br>
+                <input type="checkbox" name="ping" value="High ping"> High ping
+            </td>
+        </tr>
+    </table>
+    <br>
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
